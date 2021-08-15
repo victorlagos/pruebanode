@@ -1,0 +1,26 @@
+{
+  "name": "pruebanode",
+  "version": "1.0.0",
+  "description": "prueba node 1",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/victorlagos/pruebanode.git"
+  },
+  "author": "Victor Lagos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/victorlagos/pruebanode/issues"
+  },
+  "homepage": "https://github.com/victorlagos/pruebanode#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}
