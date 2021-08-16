@@ -16,10 +16,10 @@ function iniciarIngresoPaises(){
     setTimeout(() => {
         agregarPaises("Chile", mostrarPaises);
         setTimeout(() => {
-           agregarPaises("Argentina", mostrarPaises); 
-           setTimeout(() => {
-            agregarPaises("Mexico", mostrarPaises); 
-           }, 3000);
+            agregarPaises("Argentina", mostrarPaises); 
+            setTimeout(() => {
+                agregarPaises("Mexico", mostrarPaises); 
+            }, 3000);
         }, 3000);
     }, 3000);
 }
