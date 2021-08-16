@@ -1,4 +1,4 @@
-let paises = [];
+let paises = ['Egipto'];
 
 //2 parametros parentesis
 const agregarPais = pais => new Promise((resolve, reject) => {
@@ -11,23 +11,22 @@ const agregarPais = pais => new Promise((resolve, reject) => {
     }, 3000);
 });
 
-//Soluciona el callbackHell
-agregarPais("Chile")
-    .then(resultado => {
+async function iniciarProceso(){
+    try{
+        let resultado = await agregarPais("Chile");
+        console.log(resultado);
+        resultado = await agregarPais("Argentina");
+        console.log(resultado);
+        resultado = await agregarPais("Colombia");
+        console.log(resultado);
+        resultado = await agregarPais("Mexico");
+        console.log(resultado);
+        resultado = await agregarPais("Canada");
         console.log(resultado);
         console.log(paises);
-        return agregarPais("Argentina");
-    }).then(resultado =>{
-        console.log(resultado);
-        console.log(paises);
-        return agregarPais("Colombia");
-    }).then(resultado =>{
-        console.log(resultado);
-        console.log(paises);
-        return agregarPais("Canada");
-    }).then(resultado =>{
-        console.log(resultado);
-        console.log(paises);
-    }).catch(error=>{
+    }catch(error){
         console.log(error);
-    })
+    }
+}
+
+iniciarProceso();
